@@ -1,0 +1,140 @@
+:root{
+    --bg-color:#E5E5E5;
+    --primary-text-color:#919299;
+    --secondary-text-color: #56597A;
+    --btn-and-accent-color: #F78CB6;
+    --btn-text-color:#FFFFFF;
+    --nav-text-color:#AAAAAB;
+    --logo-text-color:#F087B1;
+    --arrow-bg-color:#FFC1DA;
+    --navigation-review-color:#ABABAB;
+    --placeholder-color:#D2D2D2;
+    --bordered: 1px solid #DBDBDB;
+    --animation:  500ms cubic-bezier(0.4,0,0.2,1);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+}
+a{
+    text-decoration: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.header-container{
+  width: 1175px;
+  padding: 76px 10px 0;
+  margin: 0 auto;
+}
+
+.logo{
+font-family: Josefin Sans;
+font-weight: 700;
+font-size: 30px;
+margin-right: 509px;
+line-height: 30px;
+letter-spacing: 0.02em;
+}
+.logo__first{
+    color:var(--logo-text-color);
+}
+.logo__second{
+    color: var(--secondary-text-color);
+}
+.navigation{
+    display: flex;
+}
+.navigation__list{
+    display: flex;
+}
+
+.navigation__item:not(:last-child){
+    margin-right: 65px;
+}
+.navigation__link{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--navigation-review-color);
+    transition:  color var(--animation),box-shadow var(--animation);
+}
+.navigation__link::after{
+	content: "";
+    display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: var(--btn-and-accent-color); 
+	transition: width var(--animation);
+}
+.navigation__link:hover:after,
+.navigation__link:focus:after {
+	width: 100%; 
+}
+.navigation__link:hover{
+    color: var(--secondary-text-color);
+    box-shadow:  6px 6px 0px rgba(235, 138, 214, 0.2);
+}
+.navigation__btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 62px;
+}
+.navigation__icon{
+    width: 24px;
+    height: 24px;
+    fill: var(--nav-text-color);
+    transition:  fill var(--animation), transform var(--animation), stroke var(--animation);
+}
+.navigation__icon:hover{
+    fill:var(--logo-text-color);
+    stroke: var(--btn-and-accent-color);
+    transform: scale(1.5) rotate(90deg) skew(30deg);
+}
+.hero__picture{
+    width: 532px;
+    height: 532px;
+    cursor: pointer;
+    transition:  box-shadow var(--animation), transform var(--animation), border-radius var(--animation);
+}
+.hero__picture:hover{
+    border-radius: 100px;
+    transform:scale(1.15);
+    box-shadow: 0 0 20px var(--btn-and-accent-color) ;
+}
