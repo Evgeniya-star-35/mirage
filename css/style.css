@@ -64,6 +64,7 @@ img {
 }
 .section-title--services{
 text-align: center;
+margin-bottom: 6px;
 }
 .section-title--hero::before{
     content: '';
