@@ -25,78 +25,125 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header-container">
-      <div class="wrapper">
-        <a href="#" class="logo">
-          <span class="logo__first">Mi</span
-          ><span class="logo__second">rage</span>
-        </a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Product</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Pricing</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="navigation__btn">
-          <svg class="navigation__icon" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </button>
-      </div>
-
-      <div class="hero">
-        <div class="hero__block">
-          <h1></h1>
-          <h2 class="hero__title">We Deliver The Best Product for You</h2>
-          <p class="hero__text">
-            Design is the creation of a plan or convention for the construction
-            of an object or a system as in architectural blueprints, engineering
-            drawings, business processes,
-          </p>
-          <button type="button" class="btn">
-            <span class="btn__text">Get started</span>
-            <svg class="btn__arrow" width="29" height="13">
-              <use href="./images/symbol-defs.svg#icon-arrow"></use>
-            </svg>
-            <svg class="btn__square" width="32" height="32">
-              <use href="./images/symbol-defs.svg#icon-square"></use>
+    <header class="header">
+      <div class="container">
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <span class="logo__first">Mi</span
+            ><span class="logo__second">rage</span>
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Product</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="navigation__btn">
+            <svg class="navigation__icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
         </div>
 
-        <div class="hero__picture">
-          <picture>
-            <source
-              srcset="
-                ./images/hero/hero@1x.webp 1x,
-                ./images/hero/hero@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 300px) "
-            />
-            <source
-              srcset="
-                ./images/hero/hero@1x.png 1x,
-                ./images/hero/hero@2x.png 2x
-              "
-              type="image/png"
-            />
-            <img src="./images/hero/hero@1x.png" alt="hero" />
-          </picture>
+        <div class="hero">
+          <div class="hero__block">
+            <h2 class="section-title section-title--hero">Creative Agency</h2>
+            <h1 class="title">We Deliver The Best Product for You</h1>
+            <p class="hero__text">
+              Design is the creation of a plan or convention for the
+              construction of an object or a system as in architectural
+              blueprints, engineering drawings, business processes,
+            </p>
+            <button type="button" class="btn">
+              <span class="btn__text">Get started</span>
+              <svg class="btn__arrow" width="29" height="13">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+              <svg class="btn__square" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-square"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="hero__picture">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero/hero@1x.webp 1x,
+                  ./images/hero/hero@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 300px) "
+              />
+              <source
+                srcset="
+                  ./images/hero/hero@1x.png 1x,
+                  ./images/hero/hero@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img src="./images/hero/hero@1x.png" alt="hero" />
+            </picture>
+          </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="services">
+        <div class="container container--services">
+          <h2 class="section-title section-title--services">Our Services</h2>
+          <h3 class="services-title">Why People Choose Us</h3>
+          <ul class="set">
+            <li class="set__card">
+              <a href="#" class="set__link"
+                ><svg class="set__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-d-design"></use>
+                </svg>
+                <h4></h4>
+                <p></p
+              ></a>
+            </li>
+            <li class="set__card">
+              <a href="#" class="set__link"
+                ><svg class="set__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-d"></use>
+                </svg>
+                <h4></h4>
+                <p></p
+              ></a>
+            </li>
+            <li class="set__card">
+              <a href="#" class="set__link"
+                ><svg class="set__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-portfolio"></use>
+                </svg>
+                <h4></h4>
+                <p></p
+              ></a>
+            </li>
+            <li class="set__card">
+              <a href="#" class="set__link"
+                ><svg class="set__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-diamond"></use>
+                </svg>
+                <h4></h4>
+                <p></p
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

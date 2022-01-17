@@ -1,7 +1,7 @@
 :root{
     --bg-color:#E5E5E5;
     --primary-text-color:#919299;
-    --secondary-text-color: #56597A;
+    --title-text-color: #56597A;
     --btn-and-accent-color: #F78CB6;
     --btn-text-color:#FFFFFF;
     --nav-text-color:#AAAAAB;
@@ -53,10 +53,36 @@ img {
     width: 1px !important;
     overflow: hidden;
 }
-.header-container{
+.section-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--btn-and-accent-color);
+}
+.section-title--hero{
+    margin-bottom: 30px;
+}
+.section-title--services{
+text-align: center;
+}
+.section-title--hero::before{
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 3px;
+    margin-right: 7px;
+    background: var(--btn-and-accent-color);
+}
+.header{
+    padding: 76px 0px 112px;
+}
+.container{
   width: 1175px;
-  padding: 76px 10px 0;
+  padding: 0 10px;
   margin: 0 auto;
+}
+.container--services{
+    width: 1170px;
 }
 .wrapper{
     display: flex;
@@ -81,7 +107,7 @@ transition:  transform var(--animation),box-shadow var(--animation);
     color:var(--logo-text-color);
 }
 .logo__second{
-    color: var(--secondary-text-color);
+    color: var(--title-text-color);
 }
 .navigation{
     display: flex;
@@ -105,7 +131,7 @@ transition:  transform var(--animation),box-shadow var(--animation);
 }
 .navigation__link:hover{
     transform: scale(1.15);
-    color: var(--secondary-text-color);
+    color: var(--title-text-color);
     box-shadow:  6px 6px 0px rgba(235, 138, 214, 0.2);
 }
 .navigation__link::after{
@@ -145,17 +171,6 @@ transition:  transform var(--animation),box-shadow var(--animation);
     display: flex;
     position: relative;
 }
-
-.hero__title{
-    max-width: 679px;
-    margin-bottom: 31px;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 74px;
-    color: var(--secondary-text-color);
-    transition:  transform var(--animation), color var(--animation);
-
-}
 .hero__text{
     max-width: 573px;
     margin-bottom: 35px;
@@ -164,7 +179,18 @@ transition:  transform var(--animation),box-shadow var(--animation);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
-.hero__title:hover{
+.title{
+    max-width: 679px;
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: var(--title-text-color);
+    transition:  transform var(--animation), color var(--animation);
+
+}
+
+.title:hover{
     transform: scale(1.15);
     color: var(--btn-and-accent-color);
 }
@@ -208,10 +234,18 @@ transition:  transform var(--animation),box-shadow var(--animation);
     right: 20px;
 }
 .btn__text{
-/* margin-right: 10px; */
-/* font-weight: 500; */
 font-size: 20px;
 line-height: 30px;
 letter-spacing: 0.02em;
 color: var(--btn-text-color);
+}
+.services{
+    padding-bottom: 186px;
+}
+.services-title{
+    font-weight: bold;
+font-size: 52px;
+line-height: 72px;
+text-align: center;
+color: var(--title-text-color);
 }
