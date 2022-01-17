@@ -9,7 +9,7 @@
     />
     <meta
       name="description"
-      content="Наша команда с удовольствием поможет Вам в создании сайта,интернет-магазина по Вашим предпочтениям"
+      content="Our team is happy to help you create a website, online store on your preferences."
     />
     <title>Mirage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,14 +28,14 @@
     <header class="header">
       <div class="container">
         <div class="wrapper">
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <span class="logo__first">Mi</span
             ><span class="logo__second">rage</span>
           </a>
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Home</a>
+                <a href="#" class="navigation__link is-active">Home</a>
               </li>
               <li class="navigation__item">
                 <a href="#" class="navigation__link">About</a>
@@ -54,8 +54,11 @@
             </svg>
           </button>
         </div>
-
-        <div class="hero">
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
           <div class="hero__block">
             <h2 class="section-title section-title--hero">Creative Agency</h2>
             <h1 class="title">We Deliver The Best Product for You</h1>
@@ -64,7 +67,7 @@
               construction of an object or a system as in architectural
               blueprints, engineering drawings, business processes,
             </p>
-            <button type="button" class="btn">
+            <button type="button" class="btn btn--hero">
               <span class="btn__text">Get started</span>
               <svg class="btn__arrow" width="29" height="13">
                 <use href="./images/symbol-defs.svg#icon-arrow"></use>
@@ -96,49 +99,55 @@
             </picture>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="services">
         <div class="container container--services">
           <h2 class="section-title section-title--services">Our Services</h2>
           <h3 class="services-title">Why People Choose Us</h3>
           <ul class="set">
             <li class="set__card">
-              <a href="#" class="set__link"
-                ><svg class="set__icon" width="50" height="50">
+              <div class="set__icon">
+                <svg width="50" height="50">
                   <use href="./images/symbol-defs.svg#icon-d-design"></use>
                 </svg>
-                <h4></h4>
-                <p></p
-              ></a>
+              </div>
+              <h4 class="set__title">Design</h4>
+              <p class="set__text">
+                a plan or drawing produced to show the look and function
+              </p>
             </li>
             <li class="set__card">
-              <a href="#" class="set__link"
-                ><svg class="set__icon" width="43" height="43">
+              <div class="set__icon">
+                <svg width="43" height="43">
                   <use href="./images/symbol-defs.svg#icon-d"></use>
                 </svg>
-                <h4></h4>
-                <p></p
-              ></a>
+              </div>
+              <h4 class="set__title">Development</h4>
+              <p class="set__text">
+                Development is defined as the process of growth or new
+              </p>
             </li>
             <li class="set__card">
-              <a href="#" class="set__link"
-                ><svg class="set__icon" width="48" height="48">
+              <div class="set__icon">
+                <svg width="48" height="48">
                   <use href="./images/symbol-defs.svg#icon-portfolio-p"></use>
                 </svg>
-                <h4></h4>
-                <p></p
-              ></a>
+              </div>
+              <h4 class="set__title">Branding</h4>
+              <p class="set__text">
+                The marketing practice of creating a name, symbol or
+              </p>
             </li>
             <li class="set__card">
-              <a href="#" class="set__link"
-                ><svg class="set__icon" width="44" height="44">
+              <div class="set__icon">
+                <svg width="44" height="44">
                   <use href="./images/symbol-defs.svg#icon-diamond-g"></use>
                 </svg>
-                <h4></h4>
-                <p></p
-              ></a>
+              </div>
+              <h4 class="set__title">Illustration</h4>
+              <p class="set__text">
+                An illustration is a decoration, interpretation or visual
+              </p>
             </li>
           </ul>
         </div>
