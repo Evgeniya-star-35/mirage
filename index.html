@@ -270,25 +270,53 @@
       </section>
       <section class="testimonial">
         <div class="container">
-          <div class="testimonial__picture">
-            <picture>
-              <source
-                srcset="
-                  ./images/testi/person@1x.webp 1x,
-                  ./images/testi/person@2x.webp 2x
-                "
-                type="image/webp"
-                media="(min-width: 300px) "
-              />
-              <source
-                srcset="
-                  ./images/testi/person@1x.png,
-                  ./images/testi/person@2x.png 2x
-                "
-                type="image/png"
-              />
-              <img src="./images/testi/person@1x.png" alt="person" />
-            </picture>
+          <div class="testimonial__wrapper">
+            <div class="testimonial__picture">
+              <picture>
+                <source
+                  srcset="
+                    ./images/testi/person@1x.webp 1x,
+                    ./images/testi/person@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 300px) "
+                />
+                <source
+                  srcset="
+                    ./images/testi/person@1x.png,
+                    ./images/testi/person@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img src="./images/testi/person@1x.png" alt="person" />
+              </picture>
+            </div>
+            <div class="testimonial__blok">
+              <h2 class="section-title section-title--testimonial">
+                Testimonial
+              </h2>
+              <h3 class="slogan slogan--variant">
+                Thats What Our Client Says About Us
+              </h3>
+              <p class="text text--variant">
+                “ Heartiest congratulations to the team for Future projects. I
+                extend thankful wishes and wish the team best of luck for the
+                future assignments to come. Your effort is gladly ”
+              </p>
+              <h4 class="testimonial__name">Jorge Morrison</h4>
+              <p class="testimonial__country">
+                North California,USA<span
+                  ><svg class="testimonial__icon-left" width="19" height="19">
+                    <use
+                      href="./images/symbol-defs.svg#icon-arrow-left"
+                    ></use></svg></span
+                ><span
+                  ><svg class="testimonial__icon-right" width="25" height="25">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                  </svg>
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -333,7 +361,7 @@
       </section>
       <section class="subscribe">
         <div class="container">
-          <div class="testimonial__picture">
+          <div class="subscribe__picture">
             <picture>
               <source
                 srcset="
@@ -350,6 +378,38 @@
               <img src="./images/mail/mail@1x.png" alt="balloon" />
             </picture>
           </div>
+          <h2 class="visually-hidden">Subscribe</h2>
+          <h3 class="slogan slogan--variant">Subscribe To Our Blog</h3>
+          <p class="text text--variant">
+            A newsletter is a tool used to communicate regularly with your
+            subscribers, delivering the information
+          </p>
+          <form name="signup_form" autocomplete="on" class="form">
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              placeholder="Type Your Email Address"
+            />
+            <button type="submit" class="btn">
+              <span class="btn__text">Send now</span>
+              <span
+                ><svg class="btn__arrow" width="29" height="13">
+                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class="btn__square" width="32" height="32">
+                  <use href="./images/symbol-defs.svg#icon-square"></use>
+                </svg>
+              </span>
+              <span
+                ><svg class="btn__email" width="19" height="19">
+                  <use href="./images/symbol-defs.svg#icon-Mail"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
         </div>
       </section>
     </main>
