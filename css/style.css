@@ -249,7 +249,8 @@ margin-right: 10px;
     height: 30px;
     padding: 4px 26px 6px 4px;
 }
-.text--variant{
+.text--design,
+.text--team{
     margin-bottom: 10px;
 }
 .teamwork{
@@ -315,7 +316,7 @@ color: var(--navigation-review-color);
     right: 25px;
 }
 .clients{
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 .clients__list{
     display: flex;
@@ -327,6 +328,66 @@ color: var(--navigation-review-color);
 }
 .subscribe{
     padding-bottom: 50px;
+}
+.subscribe__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe__picture{
+    width: 120px;
+    height: 120px;
+}
+.form{
+    position: relative;
+}
+.form__input{
+    width: 245px;
+    height: 40px;
+    padding-left: 24px;
+    filter: drop-shadow(20px 20px 40px rgba(205, 205, 205, 0.25));
+    background-color: var(--btn-text-color);
+    border-color: transparent;
+}
+::placeholder{
+    font-size: 10px;
+    color: var(--placeholder-color);
+}
+.btn--subscribe{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 5px;
+    right: 10px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+}
+.btn__email{
+    position: absolute;
+    top: 8px;
+    right: 216px;
+}
+.btn__arrow--sub{
+    top: 11px;
+    right: 10px;
+    width: 11px;
+    height: 10px;
+}
+.btn__square--sub{
+    top: 9px;
+    right: 4px;
+    width: 13px;
+    height: 13px;
+}
+.btn__text--sub{
+    font-size: 9px;
+    font-weight: 900;
+}
+.slogan--sub{
+    margin-left: 10px;
+}
+.text--sub{
+    text-align: center;
 }
 
 @media (min-width:567px){
@@ -392,15 +453,20 @@ margin-right: 55px;
 .teamwork{
     padding-bottom: 170px;
 }
-.testimonial__picture{
-    width: 320px;
-}
 .clients__list{
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .clients__item{
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 40px;
+}
+.subscribe__picture {
+    width: 140px;
+    height: 140px;
+    margin-top: -13px;
+    margin-right: 102px;
 }
 }
 @media (min-width:992px){
@@ -438,7 +504,10 @@ margin-bottom: 30px;
 margin-right: 145px;
 } 
 .testimonial__picture{
-    width: 370px;
+    margin-right: 100px;
+}
+.btn--subscribe{
+    right: 160px;
 }
 }
 @media (min-width:1200px){
@@ -538,8 +607,6 @@ position: relative;
 .text{
     text-align: left;
     max-width: 573px;
-    margin: 0 0 35px 0;
-    margin-bottom: 35px;
     font-size: 20px;
     line-height: 32px;
 }
@@ -550,7 +617,9 @@ position: relative;
     font-size: 64px;
     line-height: 74px;
     transition: color var(--animation);
-
+}
+.text--hero{
+    margin-bottom: 42px;
 }
 .title:hover{
     color: var(--btn-and-accent-color);
@@ -654,8 +723,11 @@ transition:  box-shadow var(--animation), border-radius var(--animation), opacit
     opacity: 0.8;
     border-radius: 50%;
 }
+text--design{
+    margin-bottom: 31px;
+}
 .slogan--variant{
-    max-width: 587px;
+    max-width: 606px;
 }
 .section-title--design{
     margin-left: 235px;
@@ -681,6 +753,9 @@ transition:  box-shadow var(--animation), border-radius var(--animation), opacit
 .teamwork{
     padding-top: 0;
     padding-bottom: 179px;
+}
+.text--team{
+    margin-bottom: 18px;
 }
 .team__picture{
     width: 591px;
@@ -721,7 +796,9 @@ color: var(--navigation-review-color);
 .clients__link{
     cursor: pointer;
 }
-
+.clients__list{
+    flex-wrap: nowrap;
+}
 .clients__item:not(:last-child){
     margin-right: 90px;
 }
@@ -736,6 +813,48 @@ color: var(--navigation-review-color);
 }
 .subscribe{
     padding-bottom: 209px;
+}
+.subscribe__picture{
+    width: 250px;
+    height: 250px;
+}
+.form__input{
+    width: 706px;
+    height: 82px;
+    padding-left: 46px;
+}
+::placeholder{
+    font-size: 20px;
+line-height: 32px;
+}
+.slogan--sub{
+    margin-left: 15px;
+}
+.text--sub{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.btn--subscribe{
+    width: 178px;
+    height: 54px;
+    top: 14px;
+    right: 2px;
+    padding-right: 45px;
+    padding-bottom: 0;
+    margin-right: 12px;
+}
+.btn__square--sub{
+    top: 12px;
+    right: 11px;
+}
+.btn__arrow--sub{
+    top: 22px;
+    right: 25px;
+}
+
+.btn__email {
+    top: 16px;
+    right: 645px;
 }
 
 }
